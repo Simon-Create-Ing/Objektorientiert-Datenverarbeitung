@@ -1,0 +1,84 @@
+package resources;
+
+/**
+ * Enthaelt alle nötige Strings fuer das projekt.
+ */
+
+public interface Konstanten {
+    String FILE_PATH= "src/Resources/airports.csv";
+    String KOMMA = ", ";
+    String FILE_NOT_FOUND = "Die Datei konnte nicht gefunden werden!";
+    String LADE_DATEI = "Lade Daten aus Datei mit folgenden Pfad: ";
+    String MILLISEKUNDEN = " Millisekunden";
+    String BEARBEITUNGSDAUER = "\n\rBearbeitungsdauer: ";
+    String INKORREKT_RUNWAY = "Inkorrekter Breiten- oder Laengengrad:\n\r" ;
+    String FEHLERHAFTER_FLUGHaeFEN = "Fehlerhafter flughafen ";
+    String ANZAHL_VALIDE_FLUGHaeFEN = "Anzahl valide Flughaefen: ";
+    String NEXT_LINE = "\n\r";
+    String ZERO = "0";
+    String ONE = "1";
+    String UNDERSCORE = "_";
+    String STRICHE= "-";
+    String COLUMN = ": ";
+    String ANZAHL_AIRPORT = "Anzahl eingelesener Flughafen: ";
+    String ANZAHL_GUTER_AIRPORT = " \n\rAnzahl Flughaefen mit guten Daten : ";
+    String READER_SCHLIESSE_FEHLER = "Fehler beim Einlesen der Flughaevendaten! BufferedReader konnte nicht geschlossen werden.";
+    String EINLESEN_EXECEPTION = "Keine Zeile zum einlesen gefunden!";
+    String IST_BELEUCHTET = "Ist beleuchtet";
+    String IST_NICHT_BELEUCHTET = "Ist nicht beleuchtet";
+    String ZEILEN_SPLIT_FEHLER = "Zeilensplit fehler";
+    String RAGEX = ",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)";
+    String INVALID_AIRPORT_TYPE = "Invalid AirportType: ";
+    String UNKNOWN = "unknown";
+    String SORTIEREN_FEHLER = "Sortieren Fehler: ";
+    String INVALID_ISOCOUNTRY = "Invalid IsoCountry code: ";
+    String INVALID_CONTINENT = "Invalid Continent code: ";
+    String BEARBEITUNGSDAUER_DES_EINLESEN= "Bearbeitungszeit des Einlesens der Datei: ";
+    String BEARBEITUNGSDAUER_DER_KORREKTUR_UND_ERGaeNZUNG= "Bearbeitungszeit der korrektur und Ergaenzung der Datei: ";
+    String BEARBEITUNGSDAUER_DER_UMRECHNUNG= "Bearbeitungszeit der Umrechnung der Datei: ";
+    String INVALID_RUNWAY_SURFACE = "Invalid RunwaySurface: ";
+    String ANZAHL_SORTIERTE_FLUGHaeFEN = "Anzahl sortierte Flughaefen: ";
+    String BEARBEITUNGSDAUER_DER_SORTIERUNG_NACH = "Bearbeitungsdauer der sortierung nach ";
+    String ANZAHL_DER_FLUGHaeFEN_INS_LAND = "\n\rAnzahl der Flughaefen ins Land " ;
+    String AUFSUMMIERTE_LaeNGE_IN_METERS_DER_BELEUCHTETEN_LANDEBAHNEN_IM_KONTINENT = "\n\rAufsummierte Laenge in meters der beleuchteten Landebahnen im Kontinent ";
+    String KEIN_FLUGHAFEN_WURDE_GEFUNDEN = "kein flughafen wurde gefunden";
+    String INVALID_ISOREGION = "Invalid isoRegion ";
+    String ANFANG_GRAPH = "die erste 5 Flughaefen im Graph sind:";
+    String BEARBEITUNGSDAUER_DER_SUCHE = "Bearbeitungsdauer der Suche: ";
+    String DIE_LISTE_WURDE_MIT_ERFOLG_NACH ="\nDie liste wurde mit erfolg nach ";
+    String SORTIERT = " sortiert.";
+    String PFEILE = " -->";
+    String IST = " ist: ";
+    String DER_FLUGHAFEN_MIT_DER_SCHMALSTE_LANDEBAHN_INS_LAND = "\n\rDer flughafen mit der schmalste Landebahn ins Land ";
+    String RUNWAY_WIDTH_IN_METERS ="RunwayWidth in Meters: ";
+    String RUNWAY_LENGHT_IN_METERS = "RunwayLenght in Meters: ";
+    String BEARBEITUNGSDAUER_DER_ueBERPRueFUNG = "Bearbeitungsdauer der Überprüfung: ";
+    String FLUGHAFEN_MIT_DER_KUERZESTE_BELEUCHTETE_LANDEBAHN_INS_LAND = "\n\rFlughafen mit der kürzeste beleuchtete Landebahn ins Land ";
+    String INDEX_OUT_OF_BOUNDS = "Index out of bounds";
+    String ANFANG_SORTIERUNG = " \nAnfang der Sortierung. \nDie Liste soll nach unterschiedliche Kriterien sortiert wrden.";
+    String ENDE_SORTIERUNG = "\nEnde der Sortierung";
+    String LINE = "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
+    String AUFTEILUNG_TITEL =  "%-10s %-45s %-15s %-10s %-10s %-10s %-20s %-13s %-13s %-25s%n";
+    String AUFTEILUNG = "%-10s %-45s %-15s %-10s %-10s %-10s %-20s %-15s %-13s %-25s%n";
+    String ERSTE_10_FLUGHaeFEN_NACH_SORTIERUNG = "Die ersten 10 Flughaefen nach Sortierung:";
+    String GRAPH_WIRD_KONSTRUIERT =  "\nGraph wird mit Erfolg Konstruiert mit maximaler Entfernung von 250 kilometern zwischen Knoten";
+    String BEARBEITUNGSDAUER_DER_GRAPH_ERSTELLUNG = "\nBearbeitungsdauer der Graph Erstellung: ";
+    String ANZAHL_DER_AIRPORTS_IM_GRAPH = "\nAnzahl der Airports im Graph: ";
+    String IST_VON = " ist von ";
+    String ERREICHBAR = " erreichbar ";
+    String NICHT_ERREICHBAR = " nicht erreichbar ";
+    String EINGABE_FEHLER = " ist keine natürliche Zahl. \n\rBitte gebe einen neuen Wert an: ";
+    String EINGABE_FEHLER_DER_SORTIERUNG = "\nInvalde Wert Eingegeben. Bitte geben sie ein Wert zwischen 1 und 15 ";
+    String FOUND_PATH_FROM = "Gefundener Pfad von ";
+    String TO = " zu ";
+    String ARROW = " -> ";
+    String EXECUTION_TIME = "Ausführungszeit: ";
+    String NO_PATH_FOUND_FROM = "Kein Pfad gefunden von ";
+    String GRAPH_ZUSAMMENFASSUNG = "Graph Zusammenfassung:";
+    String ANZAHL_DER_KNOTEN = "Anzahl der Knoten: ";
+    String FLUGHAFEN = "Flughafen: ";
+    String ANZAHL_DER_VERBINDUNGEN = "\nAnzahl der Verbindungen: ";
+    String KEINE_VERBINDUNGEN = "Keine Verbindungen";
+    String WOLLEN_SIE_DIE_DATEN_SORTIEREN = "Bitte geben Sie an, nach wie vielen Kriterien die Daten sortiert werden sollen (Geben sie ein zahl zwische 1 und 15).";
+    String ENTSPRECHENDE_ZAHL_FUER_DIE_ATTRIBUTE = "Nach welchen Kriterien möchten Sie sortieren? Waehlen Sie die entsprechende Zahl für jedes Attribut aus. ";
+}
